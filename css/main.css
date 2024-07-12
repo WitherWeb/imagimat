@@ -2840,6 +2840,9 @@ a {
   margin-left: 24px;
 }
 .lk-training__main-link--download svg path {
+  -webkit-transition: fill 0.2s ease-in;
+  -o-transition: fill 0.2s ease-in;
+  transition: fill 0.2s ease-in;
   fill: black;
 }
 @media (any-hover: hover) {
