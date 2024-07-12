@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="lk-header">
+  <div class="container">
+    <div class="lk-header__navigation">
+      <a class="lk-header__logo" href="">
+        <img class="lk-logo" src="./img/logo.svg" alt="" width="200px" height="200px">
+        <span class="lk-header__logo-text">Онлайн-школа <br> творческих навыков</span>
+      </a>
+      <nav class="menu" data-menu>
+          <a class="menu__logo" href="">
+          <img src="./img/mobile-logo.png" alt="">
+
+          </a>
+
+        <ul class="menu__list list-reset">
+          <li class="menu__item"><a href="" class="menu__link">Управление доступами</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Настройки</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Выйти</a></li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.625 33.375C7.48969 32.3797 11.5395 27.7993 12.7263 27.7993H25.2745C26.9943 27.7993 30.505 31.5961 31.375 32.9345M37 19.5C37 29.7173 28.9411 38 19 38C9.05888 38 1 29.7173 1 19.5C1 9.28273 9.05888 1 19 1C28.9411 1 37 9.28273 37 19.5ZM25.4478 13.1945C25.4478 9.66503 22.5488 6.78125 19.0005 6.78125C15.4523 6.78125 12.5533 9.66503 12.5533 13.1945C12.5533 16.724 15.4523 19.6078 19.0005 19.6078C22.5487 19.6078 25.4478 16.724 25.4478 13.1945Z" stroke="#2A2A2C" stroke-width="2"/>
+          </svg>
+          <div class="burger__line"></div>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="lk-access">
+        <div class="container">
+          <div class="lk-access__table">
+            <h1 class="lk-access__title lk-title-h1">Мои доступы</h1>
+            <div class="lk-access__content">
+              <div class="lk-access__head">
+                <div class="lk-access__head-name">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.6119 15.7932L15.3458 15.3699L15.6119 15.7932ZM16.0397 14.9956L15.5397 14.9956V14.9956H16.0397ZM9.09964 18.7109L8.81948 19.125L9.09964 18.7109ZM10.9187 18.7426L11.1847 19.166L10.9187 18.7426ZM1.21241 6.42135L0.944614 5.99912L1.21241 6.42135ZM1.21241 7.21711L0.944615 7.63934H0.944615L1.21241 7.21711ZM10.4456 12.5079L10.7134 12.9301L10.4456 12.5079ZM9.55441 12.5079L9.82221 12.0856L9.55441 12.5079ZM18.7876 6.42135L19.0554 5.99912L18.7876 6.42135ZM18.7876 7.21711L18.5198 6.79487L18.7876 7.21711ZM4.79283 15.7973L5.073 15.3832V15.3832L4.79283 15.7973ZM10.4456 1.13059L10.1778 1.55283L10.4456 1.13059ZM9.55441 1.13059L9.82221 1.55283L9.55441 1.13059ZM19.3782 6.80381C19.3782 6.52767 19.1543 6.30381 18.8782 6.30381C18.602 6.30381 18.3782 6.52767 18.3782 6.80381H19.3782ZM18.3782 11.806C18.3782 12.0822 18.602 12.306 18.8782 12.306C19.1543 12.306 19.3782 12.0822 19.3782 11.806H18.3782ZM10.1778 1.55283L18.5198 6.84359L19.0554 5.99912L10.7134 0.70835L10.1778 1.55283ZM18.5198 6.79487L10.1778 12.0856L10.7134 12.9301L19.0554 7.63934L18.5198 6.79487ZM1.48021 6.84359L9.82221 1.55283L9.28662 0.70835L0.944614 5.99912L1.48021 6.84359ZM9.82221 12.0856L4.65715 8.80979L4.12156 9.65426L9.28662 12.9301L9.82221 12.0856ZM4.65715 8.80979L1.48021 6.79487L0.944615 7.63934L4.12156 9.65426L4.65715 8.80979ZM3.88936 9.23203V15.0155H4.88936V9.23203H3.88936ZM4.51267 16.2114L8.81948 19.125L9.37981 18.2967L5.073 15.3832L4.51267 16.2114ZM11.1847 19.166L15.8779 16.2166L15.3458 15.3699L10.6526 18.3193L11.1847 19.166ZM16.5397 14.9956L16.5397 9.23203H15.5397L15.5397 14.9956L16.5397 14.9956ZM15.8779 16.2166C16.2967 15.9534 16.5397 15.4856 16.5397 14.9956H15.5397C15.5397 15.161 15.4574 15.2998 15.3458 15.3699L15.8779 16.2166ZM8.81948 19.125C9.53572 19.6095 10.4528 19.6259 11.1847 19.166L10.6526 18.3193C10.2571 18.5678 9.76854 18.5597 9.37981 18.2967L8.81948 19.125ZM0.944614 5.99912C0.351794 6.3751 0.351797 7.26336 0.944615 7.63934L1.48021 6.79487C1.48847 6.80011 1.49479 6.80781 1.49795 6.81397C1.50044 6.81883 1.5 6.82054 1.5 6.81923C1.5 6.81792 1.50044 6.81963 1.49795 6.82449C1.49479 6.83065 1.48847 6.83835 1.48021 6.84359L0.944614 5.99912ZM10.1778 12.0856C10.0667 12.1561 9.93326 12.1561 9.82221 12.0856L9.28662 12.9301C9.72463 13.2079 10.2754 13.2079 10.7134 12.9301L10.1778 12.0856ZM18.5198 6.84359C18.5115 6.83835 18.5052 6.83065 18.5021 6.82449C18.4996 6.81963 18.5 6.81792 18.5 6.81923C18.5 6.82054 18.4996 6.81883 18.5021 6.81397C18.5052 6.80781 18.5115 6.80011 18.5198 6.79487L19.0554 7.63934C19.6482 7.26336 19.6482 6.3751 19.0554 5.99912L18.5198 6.84359ZM3.88936 15.0155C3.88936 15.4896 4.11677 15.9436 4.51267 16.2114L5.073 15.3832C4.96634 15.311 4.88936 15.1752 4.88936 15.0155H3.88936ZM10.7134 0.70835C10.2754 0.430551 9.72463 0.430549 9.28662 0.70835L9.82221 1.55283C9.93326 1.48239 10.0667 1.48239 10.1778 1.55283L10.7134 0.70835ZM18.3782 6.80381V11.806H19.3782V6.80381H18.3782Z" fill="black"/>
+                    </svg>
+                  Продкут
+                </div>
+                <div class="lk-access__head-name">
+                  <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.8125 7.10256L8.3414 1.78525C9.23316 0.738251 10.7668 0.73825 11.6586 1.78525L16.1875 7.10256M18.6316 8.38021L16.0651 17.2772C15.9416 17.7052 15.5498 18 15.1043 18H4.9575C4.51403 18 4.12353 17.7079 3.99824 17.2825L1.37775 8.38558C1.18909 7.74502 1.66924 7.10304 2.33701 7.10304H17.6708C18.3362 7.10304 18.816 7.74084 18.6316 8.38021Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    Тариф
+                </div>
+                <div class="lk-access__head-name">
+                  <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 15.2202V15.1428M9.5 15.2202V15.1428M9.5 11.0286V10.9512M13.5 11.0286V10.9512M2 6.91425H16M3.80952 1V2.54304M14 1V2.54285M14 2.54285H4C2.34315 2.54285 1 3.92436 1 5.62855V15.9143C1 17.6185 2.34315 19 4 19H14C15.6569 19 17 17.6185 17 15.9143L17 5.62855C17 3.92436 15.6569 2.54285 14 2.54285Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    Дата оплаты
+                </div>
+                <div class="lk-access__head-name">
+                  <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 6.91425H16M3.80952 1V2.54304M14 1V2.54285M14 2.54285H4C2.34315 2.54285 1 3.92436 1 5.62855V15.9143C1 17.6185 2.34315 19 4 19H14C15.6569 19 17 17.6185 17 15.9143L17 5.62855C17 3.92436 15.6569 2.54285 14 2.54285ZM13 9.99993L8.5253 13.9999L7 12.6364" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                  Дата активации
+                </div>
+                <div class="lk-access__head-name">
+                  <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 6.91425H16M3.80952 1V2.54304M14 1V2.54285M14 2.54285H4C2.34315 2.54285 1 3.92436 1 5.62855V15.9143C1 17.6185 2.34315 19 4 19H14C15.6569 19 17 17.6185 17 15.9143L17 5.62855C17 3.92436 15.6569 2.54285 14 2.54285ZM11.2014 9.99993L13.5625 12.6562M13.5625 12.6562L11.2014 15.3124M13.5625 12.6562H4" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    Срок действия
+                </div>
+              </div>
+              <ul class="lk-access__list list-reset">
+                <li class="lk-access__item">
+                  <div class="lk-access__item-info"><span class="lk-access__item-info-name">Продкут</span> Каллиграфия</div>
+                  <div class="lk-access__item-info"> <span class="lk-access__item-info-name">Тариф</span> Полный доступ (25%)</div>
+                  <div class="lk-access__item-info"> <span class="lk-access__item-info-name">Дата оплаты</span> 23.10.2023    10:06</div>
+                  <div class="lk-access__item-info"> <span class="lk-access__item-info-name">Дата активации</span> 23.10.2023    10:06</div>
+                  <div class="lk-access__item-info lk-access__item-time lk-access__item-time--green"> <span class="lk-access__item-info-name">Срок действия</span> Бесконечный</div>
+                  <a class="lk-access__item-link btn-green-border" href="">Управление</a>
+                </li>
+                <li class="lk-access__item">
+                  <div class="lk-access__item-info"><span class="lk-access__item-info-name">Продкут</span> Каллиграфия</div>
+                  <div class="lk-access__item-info"> <span class="lk-access__item-info-name">Тариф</span> Полный доступ (25%)</div>
+                  <div class="lk-access__item-info"> <span class="lk-access__item-info-name">Дата оплаты</span> 23.10.2023    10:06</div>
+                  <div class="lk-access__item-info"> <span class="lk-access__item-info-name">Дата активации</span> 23.10.2023    10:06</div>
+                  <div class="lk-access__item-info lk-access__item-time lk-access__item-time--red"><span class="lk-access__item-info-name">Срок действия</span> Закончился</div>
+                  <a class="lk-access__item-link btn-green-border" href="">Управление</a>
+                </li>
+                <li class="lk-access__item">
+                  <div class="lk-access__item-info"><span class="lk-access__item-info-name">Продкут</span> Каллиграфия</div>
+                  <div class="lk-access__item-info"> <span class="lk-access__item-info-name">Тариф</span> Полный доступ (25%)</div>
+                  <div class="lk-access__item-info"> <span class="lk-access__item-info-name">Дата оплаты</span> 23.10.2023    10:06</div>
+                  <div class="lk-access__item-info"> <span class="lk-access__item-info-name">Дата активации</span> 23.10.2023    10:06</div>
+                  <div class="lk-access__item-info lk-access__item-time lk-access__item-time--green"> <span class="lk-access__item-info-name">Срок действия</span> до 23.10.2024</div>
+                  <a class="lk-access__item-link btn-green-border" href="">Управление</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="lk-footer">
+  <div class="container">
+    <div class="lk-footer__content">
+      <a class="lk-footer__logo" href="">
+        <img class="lk-logo" src="./img/logo.svg" alt="">
+      </a>
+      <nav class="lk-footer__nav">
+        <ul class="lk-footer__nav-list list-reset">
+          <li class="lk-footer__nav-item">
+            <a class="lk-footer__nav-link" href="">
+              Главная
+            </a>
+          </li>
+          <li class="lk-footer__nav-item">
+            <a class="lk-footer__nav-link" href="">
+              Все курсы
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="lk-footer__links list-reset">
+        <li class="lk-footer__link-item">
+          <a class="lk-footer__link" href="">
+            Политика конфиденциальности
+          </a>
+        </li>
+        <li class="lk-footer__link-item">
+          <a class="lk-footer__link" href="">
+            Договор оферты
+          </a>
+        </li>
+      </ul>
+    </div>
+    <span class="lk-footer__coppyright">
+      2016-2020, Imagination, все права защищены
+    </span>
+  </div>
+</footer>
+
+<div class="lk-modal lk-modal-estimate" id="modal-estimate" style="display: none;">
+  <form class="lk-modal__content modal-estimate__content">
+  <h2 class="modal-estimate__title">Оценить</h2>
+  <div class="rating">
+    <input type="radio" name="rating" id="rating-5">
+    <label for="rating-5"></label>
+
+    <input type="radio" name="rating" id="rating-4">
+    <label for="rating-4"></label>
+
+    <input type="radio" name="rating" id="rating-3">
+    <label for="rating-3"></label>
+
+    <input type="radio" name="rating" id="rating-2">
+    <label for="rating-2"></label>
+
+    <input type="radio" name="rating" id="rating-1">
+    <label for="rating-1"></label>
+  </div>
+</form>
+  <button class="lk-close-modal lk-close-modal-btn btn-reset">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24 1.00098L1.00018 24.0008" stroke="#858585" stroke-linecap="round"/>
+      <path d="M24 24L1.00018 1.00018" stroke="#858585" stroke-linecap="round"/>
+      </svg>
+  </button>
+</div>
+
+<div class="lk-modal lk-modal-unsubscribe" id="modal-unsubscribe" style="display: none;">
+  <form class="lk-modal__content modal-unsubscribe__content">
+  <h2 class="modal-unsubscribe__title">Отписка</h2>
+  <span class="modal-unsubscribe__deskr">Вы действительно хотите отписаться?</span>
+  <div class="modal-unsubscribe__btns">
+    <button class="modal-unsubscribe__btn lk-btn-yelow btn-reset lk-close-modal">Нет</button>
+    <button class="modal-unsubscribe__btn lk-btn-black  btn-reset lk-close-modal">Да</button>
+  </div>
+</form>
+  <button class="lk-close-modal lk-close-modal-btn btn-reset">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24 1.00098L1.00018 24.0008" stroke="#858585" stroke-linecap="round"/>
+      <path d="M24 24L1.00018 1.00018" stroke="#858585" stroke-linecap="round"/>
+      </svg>
+  </button>
+</div>
+
+<div class="lk-modal lk-modal-chat" id="modal-chat" style="display: none;">
+  <div class="course-chat__wrapper">
+    <h2 class="lk-modal-chat__title lk-title-h1">Задайте свой вопрос</h2>
+    <div class="course-chat__days-wrapper">
+    <div class="course-chat__days">
+    <div class="course-chat__day">
+      <div class="course-chat__date">
+        <span>27 февраля</span>
+      </div>
+      <div class="course-chat__block course-chat__block--row">
+        <img class="course-chat__avatar" src="./img/avatar.webp" alt="">
+        <div class="course-chat__content-modal">
+        <span class="course-chat__user">Рада</span>
+        <div class="course-chat__message-text">
+          <p>
+            Пропишите разлинованный лист, придумывая свои элементы
+            или используя элементы из урока.
+          </p>
+
+        </div>
+        </div>
+
+      </div>
+      <div class="course-chat__block course-chat__block--row course-chat__block--right">
+        <img class="course-chat__avatar" src="./img/avatar.webp" alt="">
+        <div class="course-chat__content-modal">
+        <span class="course-chat__user">Светлана</span>
+        <div class="course-chat__message-text">
+          <p>
+            Пропишите разлинованный лист, придумывая свои элементы
+или используя элементы из урока.
+          </p>
+          <div class="course-chat__message-status">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L3.54217 7L1 4.95476" stroke="#65646C" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+        </div>
+        <div class="course-chat__addition"> 1 тема | 2 урок</div>
+      </div>
+      </div>
+    </div>
+    <div class="course-chat__day">
+      <div class="course-chat__date">
+        <span>27 февраля</span>
+      </div>
+      <div class="course-chat__block course-chat__block--row">
+        <img class="course-chat__avatar" src="./img/avatar.webp" alt="">
+        <div class="course-chat__content-modal">
+        <span class="course-chat__user">Рада</span>
+        <div class="course-chat__message-text">
+          <p>
+            Пропишите разлинованный лист, придумывая свои элементы
+            или используя элементы из урока.
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="course-chat__block course-chat__block--row course-chat__block--right">
+        <img class="course-chat__avatar" src="./img/avatar.webp" alt="">
+        <div class="course-chat__content-modal">
+        <span class="course-chat__user">Светлана</span>
+        <div class="course-chat__message-text">
+          <p>
+            Пропишите разлинованный лист, придумывая свои элементы
+или используя элементы из урока.
+          </p>
+          <div class="course-chat__message-status">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L3.54217 7L1 4.95476" stroke="#65646C" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="course-chat__day">
+      <div class="course-chat__date">
+        <span>27 февраля</span>
+      </div>
+      <div class="course-chat__block course-chat__block--row">
+        <img class="course-chat__avatar" src="./img/avatar.webp" alt="">
+        <div class="course-chat__content-modal">
+        <span class="course-chat__user">Рада</span>
+        <div class="course-chat__message-text">
+          <p>
+            Пропишите разлинованный лист, придумывая свои элементы
+            или используя элементы из урока.
+          </p>
+        </div>
+        </div>
+
+      </div>
+      <div class="course-chat__block course-chat__block--row course-chat__block--right">
+        <img class="course-chat__avatar" src="./img/avatar.webp" alt="">
+        <div class="course-chat__content-modal">
+        <span class="course-chat__user">Светлана</span>
+        <div class="course-chat__message-text">
+          <p>
+            Пропишите разлинованный лист, придумывая свои элементы
+или используя элементы из урока.
+          </p>
+          <div class="course-chat__message-status">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L3.54217 7L1 4.95476" stroke="#65646C" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="course-chat__day">
+      <div class="course-chat__date">
+        <span>27 февраля</span>
+      </div>
+      <div class="course-chat__block course-chat__block--row">
+        <img class="course-chat__avatar" src="./img/avatar.webp" alt="">
+        <div class="course-chat__content-modal">
+        <span class="course-chat__user">Рада</span>
+        <div class="course-chat__message-text">
+          <p>
+            Пропишите разлинованный лист, придумывая свои элементы
+            или используя элементы из урока.
+          </p>
+        </div>
+
+      </div>
+      </div>
+      <div class="course-chat__block course-chat__block--row course-chat__block--right">
+        <img class="course-chat__avatar" src="./img/avatar.webp" alt="">
+        <div class="course-chat__content-modal">
+        <span class="course-chat__user">Светлана</span>
+        <div class="course-chat__message-text">
+          <p>
+            Пропишите разлинованный лист, придумывая свои элементы
+или используя элементы из урока.
+          </p>
+          <div class="course-chat__message-status">
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L3.54217 7L1 4.95476" stroke="#65646C" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="course-chat__message">
+  <form class="course-chat__message-form">
+    <div class="course-chat__message-wrapper">
+    <textarea class="course-chat__message-textarea textarea-message" name="chat-message" placeholder="Напишите сообщение..."></textarea>
+    <div class="course-chat__message-action">
+      <label class="course-chat__message-file">
+        <input class="course-chat__message-file-input input-reset" type="file">
+        <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.54331 27L18.416 14.64L24.4737 20.82M5.54331 27H20.6877C23.1969 27 25.231 24.9248 25.231 22.365V14.64M5.54331 27C3.03411 27 1 24.9248 1 22.365V6.91494C1 4.35509 3.03411 2.27992 5.54331 2.27992H15.3871M23.7165 9.73987L23.7165 5.36993M23.7165 5.36993L23.7165 1M23.7165 5.36993L19.4331 5.36993M23.7165 5.36993L28 5.36993M10.0866 9.23245C10.0866 10.5124 9.06956 11.55 7.81496 11.55C6.56036 11.55 5.54331 10.5124 5.54331 9.23245C5.54331 7.95252 6.56036 6.91494 7.81496 6.91494C9.06956 6.91494 10.0866 7.95252 10.0866 9.23245Z" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </label>
+      <button class="course-chat__message-send btn-reset" type="submit">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1603 12.6467C25.1603 13.0903 24.9016 13.4996 24.4831 13.7178L2.79848 25.0282C2.35388 25.2601 1.80481 25.2373 1.38461 24.9694C0.96441 24.7016 0.746921 24.2357 0.824579 23.7699L2.679 12.6467L0.824584 1.52342C0.746927 1.05762 0.964415 0.591818 1.38461 0.323968C1.80481 0.0561191 2.35389 0.0332906 2.79849 0.265186L24.4831 11.5755C24.9016 11.7938 25.1603 12.2031 25.1603 12.6467ZM5.17192 13.8771L3.87797 21.6385L18.7583 13.8771L5.17192 13.8771ZM18.7583 11.4163L5.17192 11.4163L3.87798 3.65492L18.7583 11.4163Z" fill="#26D367"/>
+          </svg>
+      </button>
+    </div>
+  </div>
+  <button class="course-chat__message-send course-chat__message-send--mobile btn-reset" type="submit">
+    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1603 12.6467C25.1603 13.0903 24.9016 13.4996 24.4831 13.7178L2.79848 25.0282C2.35388 25.2601 1.80481 25.2373 1.38461 24.9694C0.96441 24.7016 0.746921 24.2357 0.824579 23.7699L2.679 12.6467L0.824584 1.52342C0.746927 1.05762 0.964415 0.591818 1.38461 0.323968C1.80481 0.0561191 2.35389 0.0332906 2.79849 0.265186L24.4831 11.5755C24.9016 11.7938 25.1603 12.2031 25.1603 12.6467ZM5.17192 13.8771L3.87797 21.6385L18.7583 13.8771L5.17192 13.8771ZM18.7583 11.4163L5.17192 11.4163L3.87798 3.65492L18.7583 11.4163Z" fill="#26D367"/>
+      </svg>
+  </button>
+  </form>
+</div>
+  </div>
+  <button class="lk-close-modal lk-close-modal-btn btn-reset">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24 1.00098L1.00018 24.0008" stroke="#858585" stroke-linecap="round"/>
+      <path d="M24 24L1.00018 1.00018" stroke="#858585" stroke-linecap="round"/>
+      </svg>
+  </button>
+</div>
+
+<div class="lk-modal lk-modal-checking" id="modal-checking-email" style="display: none;">
+  <form class="lk-modal__content lk-modal-checking__content">
+    <h2 class="lk-modal-checking__title">Проверка почты</h2>
+    <span class="lk-modal-checking__deskr">Введите код отправленный на:</span>
+    <span class="lk-modal-checking__email">qwerty@ya.ru</span>
+    <div class="otp-container">
+      <input type="text" maxlength="1" class="ap-otp-input">
+      <input type="text" maxlength="1" class="ap-otp-input">
+      <input type="text" maxlength="1" class="ap-otp-input">
+      <input type="text" maxlength="1" class="ap-otp-input">
+      <input type="text" maxlength="1" class="ap-otp-input">
+      <input type="text" maxlength="1" class="ap-otp-input">
+  </div>
+    <button disabled class="lk-modal-checking__repeat btn-reset">Отправить код повторно (<span class="lk-modal-checking__time">5</span>)</button>
+    <button class="btn-reset lk-btn-yelow lk-modal-checking__btn"><span>Подтвердить</span></button>
+  </form>
+  <button class="lk-close-modal lk-close-modal-btn btn-reset">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24 1.00098L1.00018 24.0008" stroke="#858585" stroke-linecap="round"/>
+      <path d="M24 24L1.00018 1.00018" stroke="#858585" stroke-linecap="round"/>
+      </svg>
+  </button>
+</div>
+
+    
+  </div>
+</body>
+
+</html>
