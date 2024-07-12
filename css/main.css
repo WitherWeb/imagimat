@@ -2848,7 +2848,7 @@ a {
 @media (any-hover: hover) {
   .lk-training__main-link--download:hover svg path {
     fill: white;
-    stroke: unset;
+    stroke: none;
   }
 }
 @media (max-width: 576px) {
