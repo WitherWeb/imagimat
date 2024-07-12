@@ -2830,6 +2830,17 @@ a {
 .lk-training__main-link {
   padding: 10px 40px;
 }
+.lk-training__main-link svg path {
+  -webkit-transition: all 3s ease-in;
+  -o-transition: all 3s ease-in;
+  transition: all 3s ease-in;
+  stroke: black;
+}
+@media (any-hover: hover) {
+  .lk-training__main-link:hover svg path {
+    stroke: white;
+  }
+}
 @media (max-width: 576px) {
   .lk-training__main-link {
     width: 100%;
