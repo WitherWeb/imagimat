@@ -2829,6 +2829,31 @@ a {
 }
 .lk-training__main-link {
   padding: 10px 40px;
+  border: 1px solid #26d367;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #2a2a2c;
+  line-height: normal;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 10px;
+}
+.lk-training__main-link:active {
+  background-color: #26d367;
+  color: white;
 }
 .lk-training__main-link svg path {
   -webkit-transition: all 3s ease-in;
@@ -2836,8 +2861,21 @@ a {
   transition: all 3s ease-in;
   stroke: black;
 }
+.lk-training__main-link svg rect {
+  -webkit-transition: all 3s ease-in;
+  -o-transition: all 3s ease-in;
+  transition: all 3s ease-in;
+  stroke: black;
+}
 @media (any-hover: hover) {
+  .lk-training__main-link:hover {
+    background-color: #26d367;
+    color: white;
+  }
   .lk-training__main-link:hover svg path {
+    stroke: white;
+  }
+  .lk-training__main-link:hover svg rect {
     stroke: white;
   }
 }
