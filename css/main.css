@@ -424,9 +424,9 @@ a {
   color: white;
 }
 .btn-green-border svg path {
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 3s ease-in;
+  -o-transition: all 3s ease-in;
+  transition: all 3s ease-in;
 }
 @media (any-hover: hover) {
   .btn-green-border:hover {
@@ -552,9 +552,9 @@ a {
   gap: 10px;
 }
 .btn-blue-border svg path {
-  -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 3s ease-in;
+  -o-transition: all 3s ease-in;
+  transition: all 3s ease-in;
 }
 .btn-blue-border:active {
   background-color: #7692ff;
@@ -2840,9 +2840,9 @@ a {
   margin-left: 24px;
 }
 .lk-training__main-link--download svg path {
-  -webkit-transition: fill 0.2s ease-in;
-  -o-transition: fill 0.2s ease-in;
-  transition: fill 0.2s ease-in;
+  -webkit-transition: fill 3s ease-in;
+  -o-transition: fill 3s ease-in;
+  transition: fill 3s ease-in;
   fill: black;
 }
 @media (any-hover: hover) {
