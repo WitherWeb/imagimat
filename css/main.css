@@ -2860,12 +2860,14 @@ a {
   -o-transition: all 3s ease-in;
   transition: all 3s ease-in;
   stroke: black;
+  fill: black;
 }
 .lk-training__main-link svg rect {
   -webkit-transition: all 3s ease-in;
   -o-transition: all 3s ease-in;
   transition: all 3s ease-in;
   stroke: black;
+  fill: black;
 }
 @media (any-hover: hover) {
   .lk-training__main-link:hover {
@@ -2873,9 +2875,11 @@ a {
     color: white;
   }
   .lk-training__main-link:hover svg path {
+    fill: white;
     stroke: white;
   }
   .lk-training__main-link:hover svg rect {
+    fill: white;
     stroke: white;
   }
 }
